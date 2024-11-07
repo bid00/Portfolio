@@ -1,0 +1,338 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;  
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.hero-header{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: #222;
+
+}
+
+.wrapper{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header{
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+nav .toggle-btn {
+    width: 30px;
+    height: 35px;
+    position: absolute;
+    top: 45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
+}
+nav .toggle-btn span{
+    display: block;
+    background-color: #007ced;
+    margin: 5px 0px;
+    width: 100%;
+    height: 3px;
+    transition: 0.3s;
+    transition-property: transform,opacity;
+}
+nav .nav-links{
+    list-style-type: none;
+}
+nav .nav-links li{
+    display:inline-block ;
+}
+nav .nav-links li a {
+    color: #e5e5e5;
+    margin-right: 2.5rem;
+}
+.nav-links li a:hover{
+    color: #007ced;
+    transition: 0.2s;
+}
+.landing-container{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 20%;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 4rem;
+}
+.background-pic{
+    background-image: url(../assests/img/top-view-desk-dark-concept-with-copy-space.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 600px;
+        background-size: cover;
+        filter: blur(2px);
+
+}
+.landing-container .hero-pic{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 15px solid #444;
+    box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
+}
+.hero-text{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.hero-text h5{
+    color: #e5e5e5;
+    font-size: 14px;
+}
+.hero-text h5 span{
+    color: #007ced;
+    font-size: 16px;
+}
+.hero-text h1 {
+    color: #007ced;
+    font-size: 3rem;
+}
+.hero-text p{
+    color: #e5e5e5;
+}
+
+.btn-group{
+    margin: 45px;
+}
+.btn-group .btn{
+    font-size: 1rem;
+    border-color: #d5d5d5;
+    color: #fff;
+    background-color: #333;
+    padding: 12px 25px;
+    margin: 5px 0px;
+    margin-right: 7px;
+    border-radius: 30px;
+    border: 2px solid #e5e5e5;
+}
+.btn-group .btn:hover{
+    color: #007ced;
+    border-color: #007ced;
+    transition: 0.3s ;
+}
+.aboutme{
+    margin-top: 70px;
+}
+.about-container{
+    width: 100%;
+    padding: 40px;
+}
+.profile-pic img{
+    position: absolute;
+    left:65%;
+    margin: 50px 0px;
+    width: 250px;
+    height: 350px;
+    filter: grayscale(100%);
+}
+.about-text{
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    margin:20px 0px;
+    position: relative;
+    top: 2rem;
+    text-wrap: wrap;
+}
+
+ .about-text h1 {
+            font-family: 'Georgia', serif;
+            /* Classic serif font for elegance */
+            font-size: 2.5rem;
+            /* Larger heading size */
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-category {
+    background: #333;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.skill-category h3 {
+    font-size: 1.2rem;
+    /* Slightly larger heading within skill categories */
+    font-weight: 600;
+    color: #3498db;
+    /* Eye-catching color */
+    margin-bottom: 10px;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category ul li {
+    font-size: 1rem;
+    /* Consistent size with paragraphs */
+    color: #ddd;
+    /* Light color for items within dark background */
+    margin-bottom: 5px;
+}   
+
+footer{
+    padding: 3%;
+    width: 100%;
+    background-color: #222;
+    color:#d5d5d5;
+    height: 300px;
+}
+.footertext{
+    font-size: 20px;
+}
+.footertext span {
+    color: #007ced;
+}
+.contact{
+    margin: 20px;
+    h5{
+        font-size: larger;
+        margin: 15px 0px;
+        span{
+            color: #007ced;
+        }
+    }
+}
+
+.contact a{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #d5d5d5;
+    border: 2px solid #d5d5d5;
+    border-radius: 10px;
+    padding: 10px;
+    margin:5px 0px; 
+}
+
+.contact a:hover{
+    color: #007ced;
+    border-color: #007ced;
+    transition: 0.2s;
+}
+
+@media(max-width:930px) { 
+    nav .toggle-btn{
+        display: initial;
+    }
+    .click {
+        top: 45px;
+    }
+    .click span{
+        position: absolute;
+        margin-top: 12px;
+    }
+    .click span:first-child{
+        transform: rotate(-40deg);
+    }
+    .click span:nth-child(2){
+        opacity: 0;
+        margin: 0;
+    }
+    .click span:last-child{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    nav .nav-links{
+        position: absolute;
+        top: 110px;
+        right:-100%;
+        bottom: 0;
+        width: 60%;
+        height: 100vh;
+        background-color: #222;
+        z-index: 3;
+        box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
+        transition: 0.5s;
+        padding: 25px 0px;
+    }
+    nav .nav-links li{
+        display: block;
+    }
+    nav .nav-links li a{
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    nav .nav-links.open{
+        right: 0;
+    }
+    
+}
+
+@media(max-width:786px) {
+    .landing-container{
+        top: 50%;
+        bottom: 50%;
+        left: 10%;
+        right: 10%;
+    }
+    .background-pic{
+        height: 80%;
+        width: 100%;
+        background-size: cover;
+    }
+        .about-text h1 {
+            font-size: 2rem;
+            
+        }
+    
+        .about-text p,
+        .skill-category ul li {
+            font-size: 0.95rem;
+            
+        }
+    
+        .skill-category h3 {
+            font-size: 1.1rem;
+        }
+    
+}

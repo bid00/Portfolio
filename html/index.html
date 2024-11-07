@@ -1,0 +1,135 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Abdelrahman</title>
+</head>
+
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">Abdelrahman</div>
+                <nav class="">
+                    <div class="toggle-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <ul class="nav-links">
+                        <li>
+                            <a href="#about">About me</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/bid00">My Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <section>
+                <div class="background-pic"></div>
+                <div class="landing-container">
+                    <div class="hero-text">
+                        <h5>I'm <span class="">Full-Stack developer</span></h5>
+                        <h1>Abdelrahman Magdy</h1>
+                        <p>Hello! I’m Abdelrahman Magdy, a passionate full-stack developer specializing in building web
+                            applications that combine
+                            functionality with user-centric design. With experience in JavaScript frameworks like React
+                            and Node.js, I strive to
+                            create efficient, responsive, and innovative solutions.</p>
+
+                        <div class="btn-group"><a href="#contact" class="btn">Contact</a></div>
+                    </div>
+                    <div class="social"><i class="fa-brands fa-facebook"></i></div>
+
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <div class="aboutme" id="about">
+        <div class="wrapper">
+            <div class="about-container">
+                <div class="profile-pic">
+                    <img src="../assests/img/mypic.jpg" alt="profile-pic">
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <h1>
+                        Hi,I'm<br /> Abdelrahman Magdy
+                    </h1>
+
+                    <div class="skills">
+                        <div class="skill-category">
+                            <h3>Frontend Development</h3>
+                            <ul>
+                                <li>HTML, CSS, JavaScript</li>
+                                <li>React, Bootstrap</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3>Backend Development</h3>
+                            <ul>
+                                <li>JavaScript, Node.js</li>
+                                <li>Express.js</li>
+                            </ul>
+                        </div>
+                        <p>I’m a third-year student at Helwan National University and an aspiring full-stack developer
+                            with
+                            a strong foundation in
+                            frontend and backend development. I’m proficient in JavaScript, React, Node.js, HTML, and
+                            CSS,
+                            and I've developed
+                            projects that range from simple web applications to complex, interactive components. I’m
+                            always
+                            eager to learn and grow,
+                            both technically and creatively.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <footer id="contact">
+            <div class="wrapper">
+
+                <div class="footertext">
+                    <p>Interested in working together or have a <span>project</span> in mind? Feel free to reach out.
+                        I’m
+                        always open to new <span>opportunities</span>
+                        and collaborations in the world of web development</p>
+                </div>
+                <div class="Contact">
+                    <a href="https://api.whatsapp.com/send?phone=201062109566" target="_blank">Send
+                        whatsapp!</a>
+                    <h5>or send me a <span>Mail</span></h5>
+                    <h5>Email : aeledeisy5@gmail.com</h5>
+                    <h4>Get a look on my Projects on github <a href="https://github.com/bid00"
+                            target="_blank">Github</a>
+                    </h4>
+                </div>
+            </div>
+
+        </footer>
+        <script>
+            var btn = document.querySelector(".toggle-btn");
+            var navlinks = document.querySelector(".nav-links");
+            var links = document.querySelector(".nav-links li")
+            btn.addEventListener("click", function () {
+                this.classList.toggle("click");
+                navlinks.classList.toggle("open")
+
+            })
+        </script>
+</body>
+
+</html>
