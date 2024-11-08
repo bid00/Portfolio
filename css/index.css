@@ -366,7 +366,7 @@ footer a:hover{
 
         .profile-pic img {
             margin: 20% 0px;
-            max-width: 180%;
+            max-width: 150%;
             filter: grayscale(100%);
         }
         .about-text{
