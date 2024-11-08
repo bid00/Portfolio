@@ -384,5 +384,12 @@ footer a:hover{
             grid-row: 1;
     
         }
+
+                footer {
+                    width: 100%;
+                    background-color: #222;
+                    color: #d5d5d5;
+                    height: 48%;
+                }
     
 }
