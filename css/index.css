@@ -354,7 +354,7 @@ footer a:hover{
         }
 
     
-        .about-container p,.contact h5,.footertext p,
+        .about-container p,.Contact h5,.footertext p,
         .skill-category ul li {
             font-size: 0.95rem;
             
@@ -366,7 +366,7 @@ footer a:hover{
 
         .profile-pic img {
             margin: 20% 0px;
-            max-width: 100%;
+            max-width: 150%;
             filter: grayscale(100%);
         }
         .about-text{
@@ -375,9 +375,6 @@ footer a:hover{
         .contact{
             flex-direction: column;
         }
-                footer {
-                    height: 37%;
-                }
 
 
         .about-text {
