@@ -90,18 +90,9 @@ nav .nav-links li a {
     background-image: url(../assests/img/top-view-desk-dark-concept-with-copy-space.jpg);
         background-repeat: no-repeat;
         width: 100%;
-        height: 600px;
+        height: 80%;
         background-size: cover;
         filter: blur(2px);
-
-}
-.landing-container .hero-pic{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 15px solid #444;
-    box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
 }
 .hero-text{
     max-width: 500px;
@@ -144,41 +135,43 @@ nav .nav-links li a {
     transition: 0.3s ;
 }
 .aboutme{
-    margin-top: 70px;
+    margin-top: 2%px;
 }
 .about-container{
+    display: grid;
+    text-align: center;
+    align-items: center;
     width: 100%;
-    padding: 40px;
+    padding: 2%;
+}
+.profile-pic {
+    padding: 10px 0;
+    grid-row-start:  1;
+    grid-row-end: 3;
 }
 .profile-pic img{
-    position: absolute;
-    left:65%;
-    margin: 50px 0px;
-    width: 250px;
-    height: 350px;
+    margin: 10px 0px;
+    max-width: 70%;
     filter: grayscale(100%);
 }
 .about-text{
-    height: 100%;
-    width: 100%;
     padding: 40px;
     margin:20px 0px;
-    position: relative;
-    top: 2rem;
     text-wrap: wrap;
+    grid-row: 1;
+
 }
 
  .about-text h1 {
             font-family: 'Georgia', serif;
-            /* Classic serif font for elegance */
             font-size: 2.5rem;
-            /* Larger heading size */
             font-weight: bold;
             color: #222;
             margin-bottom: 20px;
 }
 
-.about-text p {
+.about-container p {
+    margin: 10px 0;
     font-size: 1rem;
     color: #555;
     line-height: 1.8;
@@ -186,12 +179,14 @@ nav .nav-links li a {
 .skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 2%;
+    grid-row: 3;
+    grid-column: 1 /3;
 }
 
 .skill-category {
     background: #333;
-    padding: 15px;
+    padding: 2%;
     border-radius: 8px;
     width: 100%;
     max-width: 350px;
@@ -199,11 +194,9 @@ nav .nav-links li a {
 
 .skill-category h3 {
     font-size: 1.2rem;
-    /* Slightly larger heading within skill categories */
     font-weight: 600;
     color: #3498db;
-    /* Eye-catching color */
-    margin-bottom: 10px;
+    margin-bottom: 2%;
 }
 
 .skill-category ul {
@@ -213,18 +206,15 @@ nav .nav-links li a {
 
 .skill-category ul li {
     font-size: 1rem;
-    /* Consistent size with paragraphs */
     color: #ddd;
-    /* Light color for items within dark background */
-    margin-bottom: 5px;
+    margin-bottom: 0.5%;
 }   
 
 footer{
-    padding: 3%;
     width: 100%;
     background-color: #222;
     color:#d5d5d5;
-    height: 300px;
+    height: 43%;
 }
 .footertext{
     font-size: 20px;
@@ -232,8 +222,20 @@ footer{
 .footertext span {
     color: #007ced;
 }
+
+footer .wrapper{
+    padding: 3%;
+}
+footer .container{
+    display: flex;
+    flex-direction: column;
+}
 .contact{
-    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    gap: 10%;
+    margin: 30px 0;
     h5{
         font-size: larger;
         margin: 15px 0px;
@@ -242,8 +244,18 @@ footer{
         }
     }
 }
+.wp {
+    display: inline-flex;
+    text-wrap: nowrap;
+    gap: 7%;
+}
+.email{
+    display: inline-flex;
+    text-wrap: nowrap;
+    gap: 7%;
+}
 
-.contact a{
+footer a{
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
     color: #d5d5d5;
@@ -253,7 +265,7 @@ footer{
     margin:5px 0px; 
 }
 
-.contact a:hover{
+footer a:hover{
     color: #007ced;
     border-color: #007ced;
     transition: 0.2s;
@@ -282,9 +294,9 @@ footer{
         top: 0;
     }
     nav .nav-links{
+        display: none;
         position: absolute;
         top: 110px;
-        right:-100%;
         bottom: 0;
         width: 60%;
         height: 100vh;
@@ -303,8 +315,24 @@ footer{
         text-align: center;
     }
     nav .nav-links.open{
+        display: initial;
         right: 0;
+    
     }
+    .profile-pic {
+        grid-row: 1;
+        img{
+            max-width:300px;
+        }
+}
+
+.about-container p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+    grid-column: 1/3;
+}
     
 }
 
@@ -320,12 +348,13 @@ footer{
         width: 100%;
         background-size: cover;
     }
-        .about-text h1 {
-            font-size: 2rem;
+        .about-text h1,.about-text h2 {
+            font-size: 1.5rem;
             
         }
+
     
-        .about-text p,
+        .about-container p,.contact h5,.footertext p,
         .skill-category ul li {
             font-size: 0.95rem;
             
@@ -333,6 +362,30 @@ footer{
     
         .skill-category h3 {
             font-size: 1.1rem;
+        }
+
+        .profile-pic img {
+            margin: 20% 0px;
+            max-width: 100%;
+            filter: grayscale(100%);
+        }
+        .about-text{
+            font-size: 1rem;
+        }
+        .contact{
+            flex-direction: column;
+        }
+                footer {
+                    height: 37%;
+                }
+
+
+        .about-text {
+            padding: 20px;
+            margin: 20px 0px;
+            text-wrap: wrap;
+            grid-row: 1;
+    
         }
     
 }
