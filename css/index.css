@@ -349,12 +349,12 @@ footer a:hover{
         background-size: cover;
     }
         .about-text h1,.about-text h2 {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             
         }
 
     
-        .about-container p,.Contact h5,.footertext p,
+        .about-container p,.Contact h5,.Contact a,.footertext p,
         .skill-category ul li {
             font-size: 0.95rem;
             
@@ -366,7 +366,7 @@ footer a:hover{
 
         .profile-pic img {
             margin: 20% 0px;
-            max-width: 150%;
+            max-width: 180%;
             filter: grayscale(100%);
         }
         .about-text{
