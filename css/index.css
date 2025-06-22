@@ -271,6 +271,40 @@ footer a:hover{
     transition: 0.2s;
 }
 
+.projects {
+    background-color: #1e1e1e;
+    padding: 3rem 1rem;
+    color: white;
+}
+
+.project-item {
+    background-color: #2a2a2a;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.project-item h3 {
+    margin-top: 0;
+    color: #00bfff;
+}
+
+.project-item ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    line-height: 1.6;
+}
+
+.project-item a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
+
 @media(max-width:930px) { 
     nav .toggle-btn{
         display: initial;
