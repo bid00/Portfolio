@@ -1,219 +1,177 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <title>Abdelrahman</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AbdElrahman Magdy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: #0b0f19;
+      background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.05) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+  </style>
+</head>
+<body class="text-gray-200">
 
-  <body>
-    <div class="hero-header">
-      <div class="wrapper">
-        <header>
-          <div class="logo">Abdelrahman</div>
-          <nav class="">
-            <div class="toggle-btn">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+  <!-- Hero Section -->
+  <section class="pt-24 pb-32 text-center max-w-4xl mx-auto">
+    <h1 class="text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">Abdelrahman Magdy</h1>
+    <h2 class="text-2xl font-semibold mt-4">Backend Developer</h2>
+    <p class="mt-6 text-gray-300 leading-relaxed text-lg">
+      I build scalable backend systems, APIs, authentication flows, and real-time applications
+      using Node.js, Express, MongoDB.
+    </p>
 
-            <ul class="nav-links">
-              <li>
-                <a href="#about">About me</a>
-              </li>
-              <li>
-                <a href="./assests/Abdelrahman_Magdy.pdf" target="_blank">My CV</a>
-              </li>
-              <li>
-                <a href="https://github.com/bid00">My Projects</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        <section>
-          <div class="background-pic"></div>
-          <div class="landing-container">
-            <div class="hero-text">
-              <h5>I'm <span class="">Back-end developer</span></h5>
-              <h1>Abdelrahman Magdy</h1>
-              <p>
-                Hello! I’m Abdelrahman Magdy, a passionate Back-end developer
-                specializing in building web applications that combine
-                functionality with user-centric design. With experience in
-                JavaScript frameworks like Node.js and Express, I strive to
-                create efficient and clean code APIs , RESTful APIs ,
-                integration with outter APIs .
-              </p>
+    <div class="flex justify-center gap-3 mt-8 flex-wrap">
+      <span class="px-4 py-1 rounded-full bg-blue-500/20 border border-blue-400/40 text-blue-300">Node.js</span>
+      <span class="px-4 py-1 rounded-full bg-purple-500/20 border border-purple-400/40 text-purple-300">Express.js</span>
+      <span class="px-4 py-1 rounded-full bg-green-500/20 border border-green-400/40 text-green-300">MongoDB</span>
+      <span class="px-4 py-1 rounded-full bg-green-500/20 border border-green-400/40 text-green-300">Mysql</span>
+      <span class="px-4 py-1 rounded-full bg-yellow-500/20 border border-yellow-400/40 text-yellow-300">JWT Auth</span>
+      <span class="px-4 py-1 rounded-full bg-indigo-500/20 border border-indigo-400/40 text-indigo-300">Real-time Systems</span>
+    </div>
+  </section>
 
-              <div class="btn-group">
-                <a href="#contact" class="btn">Contact</a>
-              </div>
-            </div>
-            <div class="social"><i class="fa-brands fa-facebook"></i></div>
-          </div>
-        </section>
-      </div>
+  <!-- Skills Section -->
+  <section class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 px-6 pb-24">
+    <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
+      <h3 class="text-xl font-semibold text-blue-300 mb-4">Backend Development</h3>
+      <ul class="space-y-2 text-gray-300">
+        <li>- REST API Architecture Nodejs , Express.js</li>
+        <li>- Authentication & Authorization (Oauth) </li>
+        <li>- Database Schemas & Optimization Mysql , MongoDB</li>
+        <li>- Real-time Features (WebSockets)</li>
+      </ul>
     </div>
 
-    <div class="aboutme" id="about">
-      <div class="wrapper">
-        <div class="about-container">
-          <div class="about-text">
-            <h1>
-              Hi,I'm<br />
-              Abdelrahman Magdy
-            </h1>
-            <h2>About Me</h2>
-          </div>
-          <p>
-            I’m a third-year student at Helwan National University and an
-            aspiring Back-end developer with a strong foundation in frontend and
-            backend development. I’m proficient in JavaScript, familier with
-            React, well-known and Experince in Node.js, HTML, and CSS, and I've
-            developed projects that range from simple web applications to
-            complex, interactive components. I’m always eager to learn and grow,
-            both technically and creatively.
-          </p>
-          <div class="profile-pic">
-            <img src="./assests/img/mypic.jpg" alt="profile-pic" />
-          </div>
-          <div class="skills">
-            <div class="skill-category">
-              <h3>Frontend Development</h3>
-              <ul>
-                <li>HTML</li>
-                <li>css</li>
-                <li>Bootstrap</li>
-                <li>familier with React.js</li>
-              </ul>
-            </div>
+    <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
+      <h3 class="text-xl font-semibold text-green-300 mb-4">Frontend Basics</h3>
+      <ul class="space-y-2 text-gray-300">
+        <li>- React Basics</li>
+        <li>- Component Integration</li>
+        <li>- HTML - CSS - tailwind</li>
+        <li>- API Consumption</li>
+      </ul>
+    </div>
+  </section>
 
-            <div class="skill-category">
-              <h3>Backend Development</h3>
-              <ul>
-                <li>JavaScript, Node.js</li>
-                <li>Express.js</li>
-                <li>JWT</li>
-                <li>postman</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+  <!-- Projects Section -->
+  <section class="pb-24 px-6 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">Selected Projects</h2>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <!-- Project Card -->
+      <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
+        <h3 class="text-xl font-semibold text-indigo-300">Authentication & Authorization API</h3>
+        <p class="mt-3 text-gray-300 text-sm leading-relaxed">
+          Authentication API with JWT , and Authorization for selected routes only Authorized users have access to this routes.
+        </p>
+         <ul class="py-3">
+          <h3 class="text-green-300 text-lg">Tech used:</h3>
+          <li>Nodejs</li>
+          <li>Express.js</li>
+          <li>JWT Json Web Token</li>
+          <li>MongoDB</li>
+        </ul>
+        <a href="https://github.com/bid00/AUTH-AUTHO-API" target="_blank" class="inline-block mt-4 text-blue-300 hover:underline">View Project →</a>
+      </div>
+      <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
+        <h3 class="text-xl font-semibold text-indigo-300">Electronics E-Commerce</h3>
+        <p class="mt-3 text-gray-300 text-sm leading-relaxed">
+         E-commerce website for Electronic parts , Adding new products , delete Product, cart function , whishlist , online payment and order tracking.
+        </p>
+         <ul class="py-3">
+        <h3 class="text-green-300 text-lg">Tech used:</h3>
+          <li>Nodejs</li>
+          <li>Express.js</li>
+          <li>JWT Json Web Token</li>
+          <li>MongoDB</li>
+          <li>Google Oauth</li>
+          </ul>
+        <a href="https://github.com/bid00/Electronics-ecommerce" class="inline-block mt-4 text-blue-300 hover:underline" target="_blank">View Project →</a>
+      </div>
+      <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
+        <h3 class="text-xl font-semibold text-indigo-300">Real-time Chat Application</h3>
+        <p class="mt-3 text-gray-300 text-sm leading-relaxed">
+          A full chat system with rooms, presence detection, typing indicators, and auto reconnect.
+          Built using Node.js, WebSockets, and MongoDB.
+        </p>
+        <ul class="py-3">
+          <h3 class="text-green-300 text-lg">Tech used:</h3>
+          <li>Nodejs</li>
+          <li>Express.js</li>
+          <li>React.js</li>
+          <li>JWT Json Web Token</li>
+          <li>WebSockets / socket.io</li>
+          <li>MongoDB</li>
+        </ul>
+        <a href="https://github.com/bid00/DEPI-RealTimeChat" target="_blank" class="inline-block mt-4 text-blue-300 hover:underline">View Project →</a>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur">
+        <h3 class="text-xl font-semibold text-indigo-300">AI Spine Health care</h3>
+        <p class="mt-3 text-gray-300 text-sm leading-relaxed">
+          A machine‑learning powered API that detects spinal curvature (scoliosis) from X-ray images, Book reservation with a doctor. 
+        </p>        
+        
+        <ul class="py-3">
+          <h3 class="text-green-300 text-lg">Tech used:</h3>
+          <li>FlaskAPI (python)</li>
+          <li>Nodejs</li>
+          <li>Express.js</li>
+          <li>Google Oauth</li>
+          <li>JWT Json Web Token</li>
+          <li>MongoDB</li>
+        </ul>
+        <a href="https://github.com/bid00/spine-health-care" target="_blank"" class="inline-block mt-4 text-blue-300 hover:underline">View Project →</a>
       </div>
     </div>
-    <div class="projects" id="projects">
-      <div class="wrapper">
-        <h2 style="text-align: center; margin-bottom: 2rem; color: white">
-          My Projects
-        </h2>
+  </section>
 
-        <div class="project-item">
-          <h3>Chat Application</h3>
-          <ul>
-            <li>
-              Tech Stack: React.js, Node.js, Express.js, MongoDB, WebSockets
-            </li>
-            <li>Real-time chat with room creation and joining</li>
-            <li>WebSocket-based messaging & JWT authentication</li>
-            <li>
-              <a
-                href="https://github.com/bid00/DEPI-RealTimeChat"
-                target="_blank"
-                >GitHub Repo</a
-              >
-            </li>
-          </ul>
-        </div>
+  
 
-        <div class="project-item">
-          <h3>Restaurant Management Web App</h3>
-          <ul>
-            <li>Tech Stack: Node.js, Express.js, MongoDB</li>
-            <li>Admin panel for order & inventory management</li>
-            <li>Role-based authentication for admins and staff</li>
-          </ul>
-        </div>
+<!-- Hero Section -->
+<section id="contact" class="py-20 text-center">
+<h2 class="text-3xl font-semibold mb-4">Get in Touch</h2>
+<p class="text-gray-300 mb-8 max-w-xl mx-auto">
+Feel free to reach out for collaborations or opportunities.
+</p>
 
-        <div class="project-item">
-          <h3>CRUD API</h3>
-          <ul>
-            <li>Tech Stack: Node.js, Express.js, MongoDB</li>
-            <li>Blog post API: Create, Read, Update, Delete</li>
-            <li>
-              <a href="https://github.com/bid00/BLOG-POST" target="_blank"
-                >GitHub Repo</a
-              >
-            </li>
-          </ul>
-        </div>
 
-        <div class="project-item">
-          <h3>Spine Health Care</h3>
-          <ul>
-            <li>AI integration for spine disease prediction from x-ray</li>
-            <li>JWT-based AUTH & AUTHO API</li>
-            <li>Booking & reports APIs</li>
-            <li>MongoDB for managing medical records</li>
-          </ul>
-        </div>
+<div class="space-y-2 mb-10 text-lg">
+<p class="flex items-center justify-center gap-2">
+<span class="text-blue-400">📧</span>
+<a href="mailto:aeledeisy5@gmail.com" target="_blank" class="text-blue-400 hover:underline">aeledeisy5@gmail.com</a>
+</p>
+<p class="flex items-center justify-center gap-2">
+<span class="text-purple-400">💻</span>
+<a href="https://github.com/bid00" target="_blank" class="text-blue-400 hover:underline">github.com/bid00</a>
+</p>
+<p class="flex items-center justify-center gap-2">
+<span class="text-blue-300">🔗</span>
+<a href="https://www.linkedin.com/in/abdelrahman-magdy-98b364272/" target="_blank" class="text-blue-400 hover:underline">linkedin.com/in/abdelrahman-magdy-98b364272/</a>
+</p>
+</div>
 
-        <div class="project-item">
-          <h3>E-Commerce Website</h3>
-          <ul>
-            <li>Tech Stack: Node.js, Express.js, MongoDB, JWT, nodeMailer</li>
-            <li>Authentication, payment processing, and REST APIs</li>
-            <li>
-              <a
-                href="https://github.com/bid00/Electronics-ecommerce"
-                target="_blank"
-                >GitHub Repo</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <footer id="contact">
-      <div class="wrapper">
-        <div class="container">
-          <div class="footertext">
-            <p>
-              Interested in working together or have a <span>project</span> in
-              mind? Feel free to reach out. I’m always open to new
-              <span>opportunities</span> and collaborations in the world of web
-              development
-            </p>
-          </div>
-          <div class="Contact">
-            <div class="wp">
-              <h5>contact me now</h5>
-              <a
-                href="https://api.whatsapp.com/send?phone=201062109566"
-                target="_blank"
-                >+201062109566</a
-              >
-            </div>
-            <div class="email">
-              <h5>or send me a <span>Mail</span> :</h5>
-              <a href="mailto:aeledeisy5@gmail.com">aeledeisy5@gmail.com</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
 
-    <script>
-      var btn = document.querySelector(".toggle-btn");
-      var navlinks = document.querySelector(".nav-links");
-      var links = document.querySelector(".nav-links li");
-      btn.addEventListener("click", function () {
-        this.classList.toggle("click");
-        navlinks.classList.toggle("open");
-      });
-    </script>
-  </body>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-xl mx-auto">
+<a href="mailto:aeledeisy5@gmail.com" target="_blank" class="px-6 py-3 rounded-xl bg-blue-600/30 hover:bg-blue-600/50 backdrop-blur border border-blue-500/20 transition flex items-center justify-center gap-2">
+<span>📧</span> Email Me
+</a>
+
+
+<a href="/assests/Abdelrahman_Magdy.pdf" target="_blank" class="px-6 py-3 rounded-xl bg-purple-600/30 hover:bg-purple-600/50 backdrop-blur border border-purple-500/20 transition flex items-center justify-center gap-2">
+<span>📄</span> Download CV
+</a>
+
+
+<a href="https://wa.me/+201062109566" target="_blank" class="px-6 py-3 rounded-xl bg-green-600/30 hover:bg-green-600/50 backdrop-blur border border-green-500/20 transition flex items-center justify-center gap-2">
+<span>💬</span> WhatsApp
+</a>
+</div>
+</section>
+
+</body>
 </html>
